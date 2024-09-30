@@ -38,7 +38,6 @@ console.log(price);
 young_discount = (price * kilometres *20) / 100;
 console.log(young_discount);
 
-
 //assegno un valore a senior_discount (sconto del 40%)
 senior_discount = (price * kilometres *40) / 100;
 console.log(senior_discount);
@@ -59,4 +58,4 @@ if (age < 18) {
 
 //FASE 4: output
 //stampo il prezzo del biglietto in console
-console.log(ticket_price);
+console.log(ticket_price.toFixed(2));
