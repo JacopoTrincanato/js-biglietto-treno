@@ -12,14 +12,14 @@ let age;
 //creo variabile dove salvare il prezzo al kilometro
 let price;
 
-//creo variabile dove salvare il prezzo del ticket
-let ticket_price;
-
 //creo variabile dove salvare lo sconto per i minorenni
 let young_discount;
 
 //creo variabile dove salvare lo sconto per gli over 65
 let senior_discount;
+
+//creo variabile dove salvare il prezzo del ticket
+let ticket_price;
 
 //FASE 2: raccolta Dati
 //assegno un valore a kilometres
@@ -46,8 +46,15 @@ console.log(senior_discount);
 //FASE 3: elaborazione dati
 //calcolo il prezzo del biglietto per i minorenni
 if (age < 18) {
-    ticket_price = price * kilometres - young_discount;
+    ticket_price = kilometres * price - young_discount;
 
+//calcolo il prezzo del biglietto per gli over 65
+}else if (age > 65) {
+    ticket_price = kilometres * price - senior_discount;
+
+//calcolo il prezzo del biglietto a prezzo pieno
+}else {
+    ticket_price = kilometres * price;
 }
 
 //FASE 4: output
