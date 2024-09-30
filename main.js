@@ -23,13 +23,16 @@ let senior_discount;
 
 //FASE 2: raccolta Dati
 //assegno un valore a kilometres
-kilometres = 100;
+kilometres = Number(prompt(100));
+console.log(kilometres);
 
 //assegno un valore a age
-age = 30;
+age = Number(prompt(30));
+console.log(age);
 
 //assegno un valore a price
-price = 0.21;
+price = Number(prompt(0.21));
+console.log(price);
 
 //assegno un valore a young_discount (sconto del 20%)
 young_discount = (price * kilometres *20) / 100;
@@ -43,7 +46,7 @@ console.log(senior_discount);
 //FASE 3: elaborazione dati
 //calcolo il prezzo del biglietto per i minorenni
 if (age < 18) {
-    ticket_price = (price * kilometres) - young_discount;
+    ticket_price = price * kilometres - young_discount;
 
 }
 
