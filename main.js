@@ -31,11 +31,14 @@ age = 30;
 //assegno un valore a price
 price = 0.21;
 
-//assegno un valore a young_discount
+//assegno un valore a young_discount (sconto del 20%)
 young_discount = (price * kilometres *20) / 100;
+console.log(young_discount);
 
-//assegno un valore a senior_discount
+
+//assegno un valore a senior_discount (sconto del 40%)
 senior_discount = (price * kilometres *40) / 100;
+console.log(senior_discount);
 
 //FASE 3: elaborazione dati
 //verifico il prezzo del biglietto per i minorenni
