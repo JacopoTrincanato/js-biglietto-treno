@@ -13,7 +13,7 @@ let age;
 let price;
 
 //creo variabile dove salvare il prezzo del ticket
-let ticket;
+let ticket_price;
 
 //creo variabile dove salvare lo sconto per i minorenni
 let young_discount;
@@ -41,11 +41,12 @@ senior_discount = (price * kilometres *40) / 100;
 console.log(senior_discount);
 
 //FASE 3: elaborazione dati
-//verifico il prezzo del biglietto per i minorenni
-if (first_word.length > second_word.length) {
-    message = "La prima parola è più lunga della seconda";
+//calcolo il prezzo del biglietto per i minorenni
+if (age < 18) {
+    ticket_price = (price * kilometres) - young_discount;
 
 }
 
 //FASE 4: output
-
+//stampo il prezzo del biglietto in console
+console.log(ticket_price);
