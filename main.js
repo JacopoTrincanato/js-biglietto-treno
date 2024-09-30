@@ -12,6 +12,9 @@ let age;
 //creo variabile dove salvare il prezzo al kilometro
 let price;
 
+//creo variabile dove salvare il prezzo del ticket
+let ticket;
+
 //FASE 2: raccolta Dati
 //assegno un valore a kilometres
 kilometres = 100;
