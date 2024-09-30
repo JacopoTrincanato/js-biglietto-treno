@@ -23,15 +23,15 @@ let ticket_price;
 
 //FASE 2: raccolta Dati
 //assegno un valore a kilometres
-kilometres = Number(prompt(100));
+kilometres = Number(prompt("Inserisci il numero di kilometri che percorrerai"));
 console.log(kilometres);
 
 //assegno un valore a age
-age = Number(prompt(30));
+age = Number(prompt("Inserisci la tua età"));
 console.log(age);
 
 //assegno un valore a price
-price = Number(prompt(0.21));
+price = 0.21;
 console.log(price);
 
 //assegno un valore a young_discount (sconto del 20%)
